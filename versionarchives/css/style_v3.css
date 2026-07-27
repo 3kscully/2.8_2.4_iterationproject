@@ -67,7 +67,7 @@ li::marker{
 
 .content{
 	display: flex;
-	background-image: url("../images/info-background-full.jpg");
+	background-image: url("../../images/info-background-full.jpg");
 	background-size: 2200px auto;
 	background-repeat: no-repeat;
 	background-position: center;
