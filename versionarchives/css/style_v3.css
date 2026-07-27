@@ -1,112 +1,291 @@
-<!DOCTYPE HTML>
-<html lang="en">
-	<head>
-		<title>EOTC Tawa College</title>
-		<meta charset="utf-8">
-		<meta name="Keywords" content="EOTC, TC, Tawa College"/>
-		<meta name="Author" content="Kayden Scully"/>
-		<meta name="Description" content="DIT201 Task"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
-		<!-- import the webpage's stylesheet goes here-->
-		<link rel="stylesheet" href="css/style_v3.css">
-		<link rel="icon" type="image/x-icon" href="../images/TC_favicon.png">
-	</head>
+/*Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*Texts*/
+
+body{
+	font-family: helvetica, arial, san-serif;
+	margin: 0;
+}
+
+h1{
+	font-family: "Winky Sans";
+	color: #17413f;
+	font-size: 120px;
+}
+
+h2{
+	font-family: "Cause";
+	color: #17413f;
+	font-size: 53px;
+}
+
+hr{
+	border-style: solid;
+	border-width: 1px;
+	border-color: #17413f;
+}
+
+foottext{
+	font-family: "Arial";
+	color: white;
+	font-size: 11px;
+}
+
+li::marker{
+	font-size: 1.5em;
+}
+
+/*Grids*/
+
+.headergrid{
+	display: grid;
+	z-index: 100;
+	position: sticky;
+	top: 0;
+	grid-template-columns: 320px auto;
+	grid-template-rows: 93px;
+	box-shadow: 0 0 60px 20px rgba(0, 0, 0, 0.5);
+}
+
+.gridbox{
+	display: grid;
+	margin-top: 215px;
+	margin-left: 20%;
+	margin-right: 20%;
+	position: center;
+	grid-template-columns: 266px auto;
+	grid-template-rows: 214px 2934px;
+	text-height: 100vh;
+	box-shadow: 0 0 60px 60px rgba(80, 121, 119, 0.7);
+	border-radius: 15px 15px 0 0;
+}
+
+/*Divs*/
+
+.content{
+	display: flex;
+	background-image: url("../../images/info-background-full.jpg");
+	background-size: 2200px auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.title{
+	display: flex;
+	background-color: #6889cc;
+	justify-content: center;
+	align-items: center;
+}
+.title img{
+	height: 70px;
+	width: auto;
+	margin: 0 10px;
+}
+
+.navbar{
+	display: flex;
+	background-color: #68a0cc;
+	background-image: url("../images/nav-back.jpg");
+	background-position: center;
+  	background-size: 100%; 
+	justify-content: right;
+	align-items: center;
+	padding-right: 5px;
+}
+.navbar a{
+	display: flex;
+	height: 56px;
+	width: 222px;
+	background-color: #ffd631;
+	border-width: 5px;
+	border-color: #ecc62d;
+	border-radius: 20px;
+	border-style: solid;
+	margin: 0 10px;
 	
-	<!-- main webpage content starts here -->
-	<body>
-		
-		<div class="headergrid">
-			<div class="title">
-				<img src="../images/TCtitle.png">
-				<img src="../images/TCshield.png">
-			</div>
-			<div class="navbar">
-				<a href="index.html">HOME</a>
-				<a href="info.html">INFO</a>
-				<div class="activities">
-					<button class="activitiesbutton">ACTIVITIES   &#9776;</button>
-					<div class="activities-content">
-						<a>camp</a>
-						<a>walk</a>
-						<a>forest</a>
-					</div>
-				</div>
-				<a href="help.html">HELP  &#9432;</a>
-			</div>
-		</div>
-		
-		
-		<div class="content">
-			<div class="gridbox">
-				<div class="banner">
-					<img src="../images/EONZ.png">
-					<h1>
-						EOTC
-					</h1>
-					<img src="../images/TC.png">
-				</div>
-				<div class="sidebar">
-					<div class="sbar_buttons">
-						<ul>
-							<li><button onclick="findcontent('H1')" title="sbar-1">What IS EOTC?</button>
-							<li><button onclick="findcontent('H2')" title="sbar-2">Header 2</button>
-							<li><button onclick="findcontent('H3')" title="sbar-2">Header 3</button>
-						</ul>
-					</div>
-				</div>
-				<div class="information">
-					
-					<div ID='H1'>
-						<div class="subbanner">
-							<h2>What <u>IS</u> EOTC?</h2>
-						</div>
-							<p>We're no strangers to love. You know the rules and so do I. A full commitment's what I'm thinking of.
-	You wouldn't get this from any other guy. I just wanna tell you how I'm feeling
-	Gotta make you understand. Never gonna give you up. Never gonna let you down
-	Never gonna run around and desert you. Never gonna make you cry. Never gonna say goodbye
-	Never gonna tell a lie and hurt you. We've known each other for so long
-	Your heart's been aching, but you're too shy to say it. Inside, we both know what's been going on
-	We know the game, and we're gonna play it. And if you ask me how I'm feeling
-	<br><br>
-	We've known each other for so long. Your heart's been aching, but you're too shy to say it
-	Inside, we both know what's been going on. We know the game, and we're gonna play it
-	I just wanna tell you how I'm feeling. Gotta make you understand
-	Never gonna give you up. Never gonna let you down
-	Never gonna run around and desert you. Never gonna make you cry
-	Never gonna say goodbye. Never gonna tell a lie and hurt you.
-							</p>
-					</div>
-					<hr>
-					<div ID='H2'>
-						<div class="subbanner">
-							<h2>Header <u>2</u></h2>
-						</div>
-						<p>We're no strangers to love. You know the rules and so do I. A full commitment's what I'm thinking of
-	You wouldn't get this from any other guy. I just wanna tell you how I'm feeling
-	Gotta make you understand. Never gonna give you up. Never gonna let you down
-	Never gonna run around and desert you. Never gonna make you cry. Never gonna say goodbye
-	Never gonna tell a lie and hurt you. We've known each other for so long
-	Your heart's been aching, but you're too shy to say it. Inside, we both know what's been going on
-	We know the game, and we're gonna play it. And if you ask me how I'm feeling
-	<br><br>
-	We've known each other for so long. Your heart's been aching, but you're too shy to say it
-	Inside, we both know what's been going on. We know the game, and we're gonna play it
-	I just wanna tell you how I'm feeling. Gotta make you understand
-	Never gonna give you up. Never gonna let you down
-	Never gonna run around and desert you. Never gonna make you cry
-	Never gonna say goodbye. Never gonna tell a lie and hurt you.
-						</p>
-					</div>
-					<hr>
-					<div ID='H3'>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer">
-			<foottext>&copy; <script>document.write(new Date().getFullYear())</script> Tawa College.<br>All rights reserved.</foottext>
-		</div>
-		
-	</body>
-</html>
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-family: "Cause";
+	color: #17413f;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.navbar a:hover {
+  background-color: #ffcc31;
+}
+
+.banner{
+	display: flex;
+	color: #17413f;
+	background-color: #7ae0da;
+	grid-column: span 2;
+	border-radius: 15px 15px 0 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner img{
+	display: inline-block;
+	opacity: 60%;
+	width: 130px;
+	height: auto;
+	margin: 0 100px;
+}
+
+.sidebar{
+	background-color: #90ded9;
+	box-shadow: inset 0 60px 60px -60px rgba(80, 121, 119, 0.7);
+	background-image: url('../images/patikiblue.jpg');
+	background-position: center;
+  	background-size: 100%; 
+	padding-top: 30px;
+	text-align: center;
+}
+
+.sbar_buttons{
+	position: sticky;
+	top: 150px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
+}
+.sbar_buttons button{
+	font-family: "Arial";
+	color: black;
+	font-size: 20px;
+	text-decoration: bold;
+	border: none;
+	background: none;
+	outline:none;
+}
+.sbar_buttons button:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.information{
+	background-color: #cdfffc;
+	padding-left: 61px;
+	padding-right: 70px;
+	text-align: center;
+	box-shadow: inset 60px 60px 60px -60px rgba(80, 121, 119, 0.7);
+
+}
+
+.subbanner{
+	width: auto;
+	height: auto;
+	background-color: #ffd631;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ecc62d;
+	border-radius: 20px;
+	text-align: center;
+	margin-top: 62px;
+}
+
+.footer{
+	display: flex;
+	width: auto;
+	height: 50px;
+	padding-left: 20px;
+	padding-top: 10px;
+	background-color: #68a0cc;
+}
+
+/*Buttons*/
+
+
+#BkToTp{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 15px;
+	z-index: 99;
+	border: none;
+	background: none;
+	outline: none;
+	cursor: pointer;
+}
+	
+/*dropdown*/
+.activities{
+	position: relative;
+}
+
+/* Style the dropdown button */
+.activitiesbutton{
+	display: flex;
+	position: relative;
+	height: 67.6px;
+	width: 243.6px;
+	background-color: #ffd631;
+	border-width: 5px;
+	border-color: #ecc62d;
+	border-radius: 20px;
+	border-style: solid;
+	margin: 0 10px;
+	
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	font-family: "Cause";
+	color: #17413f;
+	font-size: 28px;
+	font-weight: bold;
+	z-index: 100;
+}
+.activitiesbutton:hover{
+	background-color: #ffcc31;
+}
+
+/* Dropdown content */
+.activities-content{
+	display: none;
+	width: 222px;
+	color: #17413f;
+	position: absolute;
+	margin-left: 5px;
+}
+
+/* Links inside dropdown content */
+.activities-content a{
+	display: flex;
+	width: 100%;
+	border-radius: 2px 2px 20px 20px;
+	text-decoration: none;
+	margin-top: -13px;
+}
+
+/* Change color of dropdown links on hover */
+.activities-content a:hover{
+  background-color: #ffcc31;
+}
+
+/* Show the dropdown content on hover */
+.activities:hover .activities-content{
+  display: block;
+}
+
+/* Top item */
+.activities-content a:nth-child(1){
+    z-index: 3;
+}
+
+/* Middle item */
+.activities-content a:nth-child(2){
+    z-index: 2;
+}
+
+/* Bottom item */
+.activities-content a:nth-child(3){
+    z-index: 1;
+}
