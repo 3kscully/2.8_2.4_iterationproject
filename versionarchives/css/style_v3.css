@@ -90,7 +90,7 @@ li::marker{
 .navbar{
 	display: flex;
 	background-color: #68a0cc;
-	background-image: url("../images/nav-back.jpg");
+	background-image: url("../../images/nav-back.jpg");
 	background-position: center;
   	background-size: 100%; 
 	justify-content: right;
@@ -142,7 +142,7 @@ li::marker{
 .sidebar{
 	background-color: #90ded9;
 	box-shadow: inset 0 60px 60px -60px rgba(80, 121, 119, 0.7);
-	background-image: url('../images/patikiblue.jpg');
+	background-image: url('../../images/patikiblue.jpg');
 	background-position: center;
   	background-size: 100%; 
 	padding-top: 30px;
